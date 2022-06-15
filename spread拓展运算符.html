@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拓展运算符</title>
+</head>
+
+<body>
+  <script>
+    // ... 拓展运算符能将数组转换成逗号分隔的参数序列\
+    // 声明一个数组 
+    const wjq = ['w', 'j', 'q'] //=>'w','j','q'
+    // 声明一个函数
+    function go() {
+      console.log(arguments);
+    }
+    go(...wjq) //相当于go('w','j','q')
+  </script>
+</body>
+
+</html>

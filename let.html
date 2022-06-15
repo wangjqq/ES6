@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>let</title>
+</head>
+
+<body>
+  <script>
+    // 声明变量
+    // let a
+    // let b, c, d
+    // let e = 100
+    // let f = 521,
+    //   g = 'wjq',
+    //   h = [1, 2]
+
+    // 1.变量不能重复声明
+    // let star = '1'
+    // let star = '2'
+
+    // 2.块级作用域 ES5中有 全局,函数,eval 这三个作用域
+    // if else while for {}
+    // {
+    //   let name = "wjq"
+    //   // var就没有块级作用域,会往全局的window属性添加这个属性
+    // }
+    // console.log(name);
+
+    // 3.不存在变量提升 会报错 如果是var会输出
+    // console.log(name);
+    // let name = 'wjq'
+
+    // 4.不影响作用域链
+    {
+      let name = "wjq"
+
+      function fn() {
+        // fn中没有name,会向上一级去找
+        console.log(name);
+      }
+      fn()
+    }
+  </script>
+</body>
+
+</html>

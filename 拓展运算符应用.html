@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拓展运算符应用</title>
+</head>
+
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <script>
+    // 1.数组的合并
+    // const wjq = ['w', 'j', 'q']
+    // const age = [20, 21]
+    // // ES5
+    // const hebin = wjq.concat(age)
+    // ES6
+    // const hebin = [...wjq, ...age]
+    // console.log(hebin);
+
+    // 2.数组的克隆
+    // const wjq = ['w', 'j', 'q']
+    // const wjq_copy = [...wjq]
+    // console.log(wjq_copy);
+
+    // 3.将伪数组转成真正的数组
+    const divs = document.querySelectorAll('div')
+    const divArr = [...divs]
+    console.log(divArr); //arguments也可以转换
+  </script>
+</body>
+
+</html>
