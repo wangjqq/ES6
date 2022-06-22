@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>类声明</title>
+</head>
+
+<body>
+  <script>
+    // 手机
+    function Phone(brand, price) {
+      this.brand = brand
+      this.price = price
+    }
+
+    // 添加方法
+    Phone.prototype.call = function () {
+      console.log("我可以打电话");
+    }
+
+    // 实例化对象
+    let Xiaomi = new Phone('小米', 5999)
+    Xiaomi.call()
+
+    console.log(Xiaomi);
+
+    class ShouJi {
+      // 构造方法
+      constructor(brand, price) {
+        this.brand = brand
+        this.price = price
+      }
+      call() {
+        console.log("我可以打电话");
+      }
+    }
+
+    let Hongmi = new ShouJi('红米', 999)
+    Hongmi.call()
+    console.log(Hongmi);
+  </script>
+</body>
+
+</html>
